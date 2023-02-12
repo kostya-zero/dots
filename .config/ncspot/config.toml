@@ -1,0 +1,26 @@
+use_nerdfont = true
+shuffle = true
+library_tabs = ["tracks", "albums", "playlists"]
+cover_max_scale = 1
+
+[track_format]
+left = "%artists - %title"
+center = ""
+right = "%duration"
+
+[theme]
+primary = "#F8F9FA"
+secondary = "#DEE2E6"
+title = "#F8F9FA"
+playing = "#9DECC7"
+playing_selected = "#C0C0C0"
+playing_bg = "#2B2B2B"
+highlight = "#3CFFA4"
+highlight_bg = "#2B2B2B"
+error = "#F8F9FA"
+error_bg = "#FF7479"
+statusbar = "#1F1F1F"
+statusbar_progress = "#CCD2D9"
+statusbar_bg = "#F8F9FA"
+cmdline = "#9DECC7"
+cmdline_bg = "#1F1F1F"

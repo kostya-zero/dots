@@ -1,0 +1,3 @@
+if status is-interactive
+    # Work in progress...
+end
