@@ -1,5 +1,5 @@
 <div align="center">
-    <h1><b>zero.dots</b></р> <br>
+    <h1><b>zero.dots</b></h1>
     <h3 style="font-size: 20px">Dot files that I use in my workspace.</h3>
     <img src="imgs/workspace.png">
 </div>
