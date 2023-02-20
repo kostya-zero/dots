@@ -1,6 +1,6 @@
 <div align="center">
-    <p style="font-size: 34px; margin: 0"><b>zero.dots</b></p> <br>
-    <p style="font-size: 20px">Dot files that I use in my workspace.</p>
+    <h1><b>zero.dots</b></р> <br>
+    <h3 style="font-size: 20px">Dot files that I use in my workspace.</h3>
     <img src="imgs/workspace.png">
 </div>
 
