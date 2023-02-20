@@ -6,7 +6,7 @@
 
 ## Welcome to my *dots*
 
-This repository contains my own dot files for KDE Plasma and other applications/tools that I use.
+This repository contains my own dot files for Hyprland and other applications/tools that I use.
 If you have any suggestions you can tell me by contacts in my profile readme.
 
 - **OS** - ArchLinux
