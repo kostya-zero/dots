@@ -1,0 +1,97 @@
+* {
+    font-family: 'SF Pro Display', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', sans-serif;
+    color: #f8f9fa;
+}
+
+window#waybar {
+    opacity: 1;
+    background-color: #151515;
+}
+
+#workspaces {
+    background-color: #151515;
+    border-radius: 5px;
+}
+
+#workspaces button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    transition: 0.15s ease-in-out;
+    font-weight: 400;
+}
+
+#workspaces button:hover {
+    background: #898A8A;
+}
+
+#workspaces button.active {
+    background: #363636;
+    font-weight: 800;
+    border: none;
+}
+
+#workspaces button.active:hover {
+    background-color: #898A8A;
+}
+
+#clock {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+#language {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#tray {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#pulseaudio {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#custom-appmenu {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    transition: 0.15s ease-in-out;
+}
+
+#custom-powermenu {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 9px;
+    transition: 0.15s ease-in-out;
+}
+
+#network {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#window {
+    background-color: #151515;
+    border-radius: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    transition: 0.15s ease-in-out;
+}
+

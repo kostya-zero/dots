@@ -1,0 +1,14 @@
+sort=-time
+layer=overlay
+background-color=#1f1f1f
+width=300
+height=110
+border-size=0
+border-color=#f8f9fa
+border-radius=5
+icons=1
+icon-location=left
+font=SF Pro Display 10
+max-icon-size=32
+default-timeout=3000
+ignore-timeout=1

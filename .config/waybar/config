@@ -1,0 +1,70 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 14,
+    "spacing": 2,
+    "output": "DVI-D-1",
+    "modules-left": ["custom/appmenu", "wlr/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "hyprland/language", "network", "pulseaudio",  "custom/powermenu"],
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-number": true
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%A, %B %d}"
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "en",
+        "format-ru": "ru",
+        "keyboard-name": "by-tech-usb-gaming-keyboard"
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 25
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-source": "{icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "tooltip-format": "{volume}%",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+    "custom/appmenu": {
+        "on-click": "$HOME/.config/rofi/launcher/launcher.sh",
+        "format": ""
+    },
+    "custom/powermenu": {
+        "on-click": "$HOME/.config/rofi/powermenu/powermenu.sh",
+        "format": ""
+    },
+    "network" : {
+        "interface": "enp5s0",
+        "format": "",
+        "format-ethernet": "",
+        "format-disconnected": "",
+        "tooltip-format": "Connected",
+        "tooltip-format-ethernet": "Connected",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    }
+}
