@@ -1,8 +1,3 @@
-require("mason").setup()
-require("mason-lspconfig").setup()
-require("nvim-autopairs").setup{}
-require("Comment").setup()
-
 local cmp = require("cmp")
 
 local kind_icons = {
@@ -50,8 +45,8 @@ cmp.setup ({
         ['<CR>'] = cmp.mapping.confirm({ select = true })
     }),
     snippet = {
-        expand = function(args) 
-            require'luasnip'.lsp_expand(args.body)
+        expand = function(args)
+            require('luasnip').lsp_expand(args.body)
         end
     },
     window = {
@@ -92,36 +87,3 @@ cmp.setup.cmdline(':', {
         { name = 'path'    }
     }
 })
-
-require("nvim-treesitter.configs").setup {
-    highlight = {
-        enable = true
-    }
-}
-
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
-require("lspconfig")["lua_ls"].setup{
-    capabilities = capabilities,
-    settings = {
-        Lua = {
-            runtime = {
-                version = 'LuaJIT'
-            },
-            telemetry = {
-                enable = false
-            }
-        }
-    }
-}
-
-require("lspconfig")["rust_analyzer"].setup {
-    capabilities = capabilities
-}
-
-require("lspconfig")["cssls"].setup {
-    capabilities = capabilities
-}
-
-require("lspconfig")["pyright"].setup {
-    capabilities = capabilities
-}

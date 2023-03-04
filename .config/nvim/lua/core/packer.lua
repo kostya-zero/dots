@@ -1,17 +1,29 @@
+vim.cmd("packadd packer.nvim")
+
 return require('packer').startup(function(use)
+
     -- Packer
     use('wbthomason/packer.nvim')
 
     -- Themes
     use('aktersnurra/no-clown-fiesta.nvim')
-    use('EdenEast/nightfox.nvim')
+    use('nanotech/jellybeans.vim')
+    use("bluz71/vim-moonfly-colors")
 
     -- UI
     use('kyazdani42/nvim-web-devicons')
+    use("dstein64/vim-startuptime")
     use('nvim-lualine/lualine.nvim')
-    use {'akinsho/bufferline.nvim', tag = "v3.*"}
-    use('nvim-tree/nvim-tree.lua')
+    use('akinsho/bufferline.nvim')
+    use('folke/noice.nvim')
+    use('MunifTanjim/nui.nvim')
+
+    -- Tools 
     use('goolord/alpha-nvim')
+    use('nvim-tree/nvim-tree.lua')
+    use('nvim-telescope/telescope.nvim')
+    use('nvim-lua/plenary.nvim')
+    use('rcarriga/nvim-notify')
 
     -- Formatters
     use('windwp/nvim-autopairs')
@@ -24,9 +36,11 @@ return require('packer').startup(function(use)
     use('williamboman/mason.nvim')
     use('williamboman/mason-lspconfig.nvim')
     use('neovim/nvim-lspconfig')
+    use("RishabhRD/nvim-lsputils")
     use('mfussenegger/nvim-dap')
     use('jose-elias-alvarez/null-ls.nvim')
     use('nvim-treesitter/nvim-treesitter')
+    use('glepnir/lspsaga.nvim')
 
     -- CMP
     use('hrsh7th/nvim-cmp')
