@@ -1,5 +1,5 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "rust_analyzer", "cssls", "pyright", "omnisharp" }
+    -- ensure_installed = { "lua_ls", "rust_analyzer", "cssls", "pyright", "csharp_ls" }
 })
 

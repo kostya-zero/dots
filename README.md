@@ -61,14 +61,19 @@ After this restart your Neovim and you will have working environment.
 But we haven't working LSP. It's because we need to install dependencies.
 In my configuration I use mason.nvim as package manager for LSP servers, formatters and etc.
 
-Which LSP servers I use:
+To add new LSP servers open `lua/lsp/config.lua` file and add new lines.
 
-- `cssls`
-- `rust_analyzer`
-- `lua_ls`
-- `pyright`
-
+```lua
+require("lspconfig")[<lsp_server_name>].setup {
+    capabilities = capabilities
+}
+```
+Replace `<lsp_server_name>` which you want to use.
 To make them work, you need to check which dependencies need. You can check that [there](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md).
+
+### Setup tree-sitter
+
+Only you need to do is to install `tree-sitter` and in Neovim run `:TSUpdate`
 
 ### Shortcuts
 
